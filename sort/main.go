@@ -17,10 +17,10 @@ func sortInt() {
 	fmt.Println(s)
 }
 
-// sort Sort.Interface 
+// sort Sort.Interface
 type Organ struct {
-	Name	string
-	Weight	int
+	Name   string
+	Weight int
 }
 
 type Organs []*Organ
@@ -68,7 +68,7 @@ func sortInterface() {
 	printOrgans(s)
 
 	f := func(search int) (f func(i int) bool) {
-		return func (i int) bool {
+		return func(i int) bool {
 			return s[i].Weight > search
 		}
 	}
